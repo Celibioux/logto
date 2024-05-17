@@ -1287,8 +1287,8 @@ importers:
         version: 3.22.4
     devDependencies:
       '@logto/cloud':
-        specifier: 0.2.5-e5d8200
-        version: 0.2.5-e5d8200(zod@3.22.4)
+        specifier: 0.2.5-fadb481
+        version: 0.2.5-fadb481(debug@4.3.4)
       '@rollup/plugin-commonjs':
         specifier: ^25.0.7
         version: 25.0.7(rollup@4.12.0)
@@ -2773,8 +2773,8 @@ importers:
         specifier: ^29.5.0
         version: 29.5.0
       '@logto/cloud':
-        specifier: 0.2.5-e5d8200
-        version: 0.2.5-e5d8200(zod@3.22.4)
+        specifier: 0.2.5-fadb481
+        version: 0.2.5-fadb481(debug@4.3.4)
       '@logto/connector-kit':
         specifier: workspace:^3.0.0
         version: link:../toolkit/connector-kit
@@ -3272,8 +3272,8 @@ importers:
         version: 3.22.4
     devDependencies:
       '@logto/cloud':
-        specifier: 0.2.5-e5d8200
-        version: 0.2.5-e5d8200(zod@3.22.4)
+        specifier: 0.2.5-fadb481
+        version: 0.2.5-fadb481(debug@4.3.4)
       '@silverhand/eslint-config':
         specifier: 6.0.1
         version: 6.0.1(eslint@8.57.0)(prettier@3.0.0)(typescript@5.3.3)
@@ -5179,9 +5179,9 @@ packages:
   '@logto/client@2.6.6':
     resolution: {integrity: sha512-QT7jMnzEIWHBNrf9/M8p1OErRBbbNZjoekXGji5aZCyUh975hh8+GEBL21HV71FT3H/5Cq4Gf1GzUbAIW3izMA==}
 
-  '@logto/cloud@0.2.5-e5d8200':
-    resolution: {integrity: sha512-/ZPaiIU7ORfKtNqsopVg4jxDt/sM6CGAGny06ppv/2FNsL7h8rX6JXOUyyKmT6ffCh/K/5s2HZe7v86zx5gENQ==}
-    engines: {node: ^20.9.0}
+  '@logto/cloud@0.2.5-fadb481':
+    resolution: {integrity: sha512-E5ZUscmw6R//cYRGUj3xbJB7U2k2w5G6+TbLiWwAAXOpQoDehDWJO7Y9MoWd05VHqFPvs1f9x7xpswrMbkhfMg==}
+    engines: {node: ^18.12.0}
 
   '@logto/js@4.1.1':
     resolution: {integrity: sha512-+RgthBvDw30UojirtAjZeHNfOwDQVURmpjcIBYTIf6afx5F5jJq8b1D/eaFbrCFrmXmatkT2iN7X8kYHui86WQ==}
@@ -6757,10 +6757,23 @@ packages:
   '@withtyped/client@0.8.7':
     resolution: {integrity: sha512-qK+Tsczvko8mBRACtHGYj0CdMZFaBmosMGUahTAr544Jb183INPZPn/NpUFtTEpl5g3e4lUjMc5jPH0V78D0+g==}
 
+  '@withtyped/postgres@0.11.0':
+    resolution: {integrity: sha512-PHnx6ake/MDdyy4sZXS/7l5XNBtjqlPSqSHrlmCYUXYxUV0sHSrXECKxX7deAvWZtcHVh9VaWEpiQBhFS06Vig==}
+    peerDependencies:
+      '@withtyped/server': ^0.11.0
+
+  '@withtyped/server@0.11.1':
+    resolution: {integrity: sha512-9b/rH+6S8rKlgVTuDfDOSXiVjOBz5yd4EIP6qswncIJvA+i9j1ykR0GIBGuJSQAr7SWrSNCILUVK+oDTiWzJ6g==}
+    peerDependencies:
+      zod: ^3.19.1
+
   '@withtyped/server@0.13.6':
     resolution: {integrity: sha512-l+jaZ6Gy/S3oF9q91JuHtWlRqB+bK8ycniAK2atK05/ZfhS/qBPV/JPA18fM+JzSQA+tr3CYXnul5SshmYsRoA==}
     peerDependencies:
       zod: ^3.19.1
+
+  '@withtyped/shared@0.2.0':
+    resolution: {integrity: sha512-SADIVEospfIWAVK0LxX7F1T04hsWMZ0NkfR3lNfvJqOktJ52GglI3FOTVYOM1NJYReDT6pR0XFlCfaF8TVPt8w==}
 
   '@withtyped/shared@0.2.2':
     resolution: {integrity: sha512-Vpcj12NqaoZ8M5Z/1kffheI9FBZEm9goed0THmgTcMKXLHjXSRbMZMp0olVxovEgaTIAydshqJOQUXKZMctIZw==}
@@ -8416,6 +8429,9 @@ packages:
   fd-slicer@1.1.0:
     resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==}
 
+  fetch-retry@5.0.6:
+    resolution: {integrity: sha512-3yurQZ2hD9VISAhJJP9bpYFNQrHHBXE2JxxjY5aLEcDi46RmAzJE2OC9FAde0yis5ElW0jTTzs0zfg/Cca4XqQ==}
+
   figures@5.0.0:
     resolution: {integrity: sha512-ej8ksPF4x6e5wvK9yevct0UCXh8TTFlWGVLlgjZuoBH1HwjIfKE/IdL5mq89sFA7zELi1VhKpmtDnrs7zWyeyg==}
     engines: {node: '>=14'}
@@ -8459,6 +8475,10 @@ packages:
   find-up@5.0.0:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
+
+  find-up@6.3.0:
+    resolution: {integrity: sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   find-up@7.0.0:
     resolution: {integrity: sha512-YyZM99iHrqLKjmt4LJDj58KI+fYyufRLBSYcqycxf//KpBk9FoewoGX0450m9nB44qrZnovzC2oeP5hUibxc/g==}
@@ -9588,6 +9608,9 @@ packages:
 
   joi@17.12.2:
     resolution: {integrity: sha512-RonXAIzCiHLc8ss3Ibuz45u28GOsWE1UpfDXLbN/9NKbL4tCJf8TWYVKsoYuuh+sAUt7fsSNpA+r2+TBA6Wjmw==}
+
+  jose@4.15.5:
+    resolution: {integrity: sha512-jc7BFxgKPKi94uOvEmzlSWFFe2+vASyXaKUpdQKatWAESU2MWjDfFf0fdfc83CDKcA5QecabZeNLyfhe3yKNkg==}
 
   jose@5.0.1:
     resolution: {integrity: sha512-gRVzy7s3RRdGbXmcTdlOswJOjhwPLx1ijIgAqLY6ktzFpOJxxYn4l0fC2vHaHHi4YBX/5FOL3aY+6W0cvQgpug==}
@@ -14705,14 +14728,34 @@ snapshots:
       '@logto/js': 4.1.1
       '@silverhand/essentials': 2.9.1
       camelcase-keys: 7.0.2
-      jose: 5.2.2
+      jose: 5.2.4
 
-  '@logto/cloud@0.2.5-e5d8200(zod@3.22.4)':
+  '@logto/cloud@0.2.5-fadb481(debug@4.3.4)':
     dependencies:
+      '@logto/app-insights': link:../../.logto/packages/app-insights
+      '@logto/cli': link:../../.logto/packages/cli
+      '@logto/connector-kit': link:../../.logto/packages/toolkit/connector-kit
+      '@logto/core-kit': link:../../.logto/packages/toolkit/core-kit
+      '@logto/schemas': link:../../.logto/packages/schemas
+      '@logto/shared': link:../../.logto/packages/shared
       '@silverhand/essentials': 2.9.1
-      '@withtyped/server': 0.13.6(zod@3.22.4)
+      '@withtyped/postgres': 0.11.0(@withtyped/server@0.11.1(zod@3.22.4))
+      '@withtyped/server': 0.11.1(zod@3.22.4)
+      accepts: 1.3.8
+      chalk: 5.3.0
+      decamelize: 6.0.0
+      dotenv: 16.0.0
+      fetch-retry: 5.0.6
+      find-up: 6.3.0
+      got: 13.0.0
+      helmet: 7.0.0
+      http-proxy: 1.18.1(debug@4.3.4)
+      jose: 4.15.5
+      mime-types: 2.1.35
+      zod: 3.22.4
     transitivePeerDependencies:
-      - zod
+      - debug
+      - pg-native
 
   '@logto/js@4.1.1':
     dependencies:
@@ -16963,12 +17006,29 @@ snapshots:
     transitivePeerDependencies:
       - zod
 
+  '@withtyped/postgres@0.11.0(@withtyped/server@0.11.1(zod@3.22.4))':
+    dependencies:
+      '@types/pg': 8.11.2
+      '@withtyped/server': 0.11.1(zod@3.22.4)
+      '@withtyped/shared': 0.2.0
+      pg: 8.11.3
+    transitivePeerDependencies:
+      - pg-native
+
+  '@withtyped/server@0.11.1(zod@3.22.4)':
+    dependencies:
+      '@silverhand/essentials': 2.9.1
+      '@withtyped/shared': 0.2.0
+      zod: 3.22.4
+
   '@withtyped/server@0.13.6(zod@3.22.4)':
     dependencies:
       '@silverhand/essentials': 2.9.1
       '@withtyped/shared': 0.2.2
       nanoid: 4.0.2
       zod: 3.22.4
+
+  '@withtyped/shared@0.2.0': {}
 
   '@withtyped/shared@0.2.2': {}
 
@@ -17259,7 +17319,7 @@ snapshots:
 
   axios@1.6.7:
     dependencies:
-      follow-redirects: 1.15.6
+      follow-redirects: 1.15.6(debug@4.3.4)
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -18864,6 +18924,8 @@ snapshots:
     dependencies:
       pend: 1.2.0
 
+  fetch-retry@5.0.6: {}
+
   figures@5.0.0:
     dependencies:
       escape-string-regexp: 5.0.0
@@ -18914,6 +18976,11 @@ snapshots:
       locate-path: 6.0.0
       path-exists: 4.0.0
 
+  find-up@6.3.0:
+    dependencies:
+      locate-path: 7.2.0
+      path-exists: 5.0.0
+
   find-up@7.0.0:
     dependencies:
       locate-path: 7.2.0
@@ -18940,7 +19007,9 @@ snapshots:
 
   flatted@3.3.1: {}
 
-  follow-redirects@1.15.6: {}
+  follow-redirects@1.15.6(debug@4.3.4):
+    optionalDependencies:
+      debug: 4.3.4
 
   for-each@0.3.3:
     dependencies:
@@ -19480,10 +19549,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  http-proxy@1.18.1:
+  http-proxy@1.18.1(debug@4.3.4):
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.6
+      follow-redirects: 1.15.6(debug@4.3.4)
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -20433,6 +20502,8 @@ snapshots:
       '@sideway/formula': 3.0.1
       '@sideway/pinpoint': 2.0.0
 
+  jose@4.15.5: {}
+
   jose@5.0.1: {}
 
   jose@5.2.2: {}
@@ -20636,7 +20707,7 @@ snapshots:
 
   koa-proxies@0.12.4(koa@2.13.4):
     dependencies:
-      http-proxy: 1.18.1
+      http-proxy: 1.18.1(debug@4.3.4)
       koa: 2.13.4
       path-match: 1.2.4
       uuid: 8.3.2
